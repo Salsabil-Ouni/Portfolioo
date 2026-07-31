@@ -3,21 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Salsabil Ouni ☁️ ~ AI Engineer Portfolio</title>
+  <title>Salsabil Ouni — AI Engineer</title>
   <link rel="icon" href="gifs/cinnamoroll-kawaii.webp" type="image/webp" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/recruiter.css" />
 </head>
 <body>
 
-<script src="js/cursor.js"></script>
-
 <!-- ══ NAV ══ -->
 <nav>
-  <div class="nav-logo">
-    <img src="gifs/cinnamoroll-main.webp" alt="Cinnamoroll" />
-    Salsabil ☁️
-  </div>
+  <a href="index.html" class="nav-logo">Salsabil Ouni</a>
   <button class="nav-burger" aria-label="Menu">&#9776;</button>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
@@ -31,63 +25,40 @@
     <li><a href="#volunteering">Volunteering</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="recruiter.html" class="nav-recruiter-btn">Recruiter View</a>
-  <a href="blog.html" class="nav-blog-btn"> Blog</a>
+  <div class="nav-right">
+    <a href="index.html" class="nav-portfolio-btn">← Fun View</a>
+    
+  </div>
 </nav>
 
 <main>
 
 <!-- ══ HERO ══ -->
 <section id="hero">
-  <div class="hero-main">
-    <img src="gifs/cinnamoroll-hi.gif" alt="Cinnamoroll waving hi" />
-  </div>
   <div class="hero-content">
-    <h1 class="hero-title">Salsabil Ouni</h1>
-    <p class="hero-sub">AI Engineer · Full Stack · Comp Bio</p>
-    <p class="hero-loc">☁️ Tunisia, Sousse &nbsp;•&nbsp; open to all adventures!</p>
+    <h1 class="hero-title">Salsabil <span>Ouni</span></h1>
+    <p class="hero-sub">AI Engineer · Full Stack · Computational Biology</p>
+    <p class="hero-loc">Tunisia, Sousse </p>
+    <div class="hero-badge"><span class="hero-badge-dot"></span> Open to opportunities</div>
     <div class="hero-btns">
-      <a href="mailto:salsabil.ouni.i@gmail.com" class="btn btn-p">say hi to me!</a>
-      <button onclick="document.getElementById('resume-modal').classList.add('open')" class="btn btn-s">view my resume</button>
+      <a href="mailto:salsabil.ouni.i@gmail.com" class="btn btn-p">Get in touch</a>
+      <button onclick="document.getElementById('resume-modal').classList.add('open')" class="btn btn-s">View Resume</button>
       <a href="https://linkedin.com/in/salsabil-ouni/" target="_blank" class="btn btn-s">LinkedIn</a>
       <a href="https://github.com/Salsabil-Ouni" target="_blank" class="btn btn-s">GitHub</a>
-    </div>
-    <div class="recruiter-nudge">
-      <div class="rn-card">
-        <img class="rn-gif" src="gifs/cinnamoroll-gif-8.gif" alt="" />
-        <div class="rn-bubble">
-          <span class="rn-label">recruiter?</span>
-          <span class="rn-msg">I have a more serious page just for you ! <a href="recruiter.html">check it out →</a></span>
-        </div>
-      </div>
     </div>
   </div>
 </section>
 
-<!-- GIF strip -->
-<div class="gif-strip">
-  <div class="gs-item"><img src="gifs/cinnamoroll-skin-care.gif" alt="" /></div>
-  <div class="gs-item"><img src="gifs/cinnamon-roll.webp" alt="" /></div>
-  <div class="gs-item"><img src="gifs/cinnamoroll-sanrio-char.gif" alt="" /></div>
-  <div class="gs-item"><img src="gifs/cinnamoroll-sanrio-char2.webp" alt="" /></div>
-  <div class="gs-item"><img src="gifs/cinnamoroll-sanrio-2.webp" alt="" /></div>
-</div>
-
 <!-- ══ ABOUT ══ -->
 <div id="about-wrap">
 <section id="about">
-  <div class="sec-hd"><h2 class="sec-title">☁️ About Me</h2><div class="sec-line"></div></div>
+  <div class="sec-hd"><h2 class="sec-title">About Me</h2><div class="sec-line"></div></div>
   <div class="about-card reveal">
-    <div class="about-left">
-      <div class="about-avatar">
-        <img src="gifs/cinnamoroll-about.gif" alt="Cinnamoroll" />
-      </div>
-    </div>
     <div class="about-text">
-      <h3>Hi, I'm Salsabil ☁️</h3>
-      <p>I'm an AI engineer and developer who's spent time building in Japan and Tunisia, things like Arabic TTS systems, rehab AI, and medical imaging models. Mostly because I genuinely think teaching machines to solve real problems is fascinating.</p>
-      <p>At the moment, I'm doing something slightly chaotic: pursuing two degrees at once , an <strong>Engineering Diploma in AI &amp; Data Science</strong> and a <strong>Master's in Molecular Medicine AI</strong>. It's a lot, but the overlap between the two is where the most interesting problems live.</p>
-      <p>I speak 5 languages and i like interning abroad. Outside of coding I'm usually organizing events, eating at hackathons or sleeping in conferences. </p> <p> And as you can tell I'm obsessed with Cinnamoroll ☁️! </p>
+      <h3>Salsabil Ouni</h3>
+      <p>AI engineer with six internships across Japan and Tunisia, building production systems at the intersection of machine learning and real-world impact: an Arabic TTS engine at 97% intelligibility, a rehabilitation AI used by 36 patients, and a medical imaging model at 96% accuracy.</p>
+      <p>Currently pursuing two concurrent degrees: an <strong>Engineering Diploma in AI &amp; Data Science</strong> and a <strong>Master's in Molecular Medicine AI</strong>, with research focused on applying deep learning to genomics, immunology, and protein structure prediction.</p>
+      <p>Multilingual in Arabic, English, French, Japanese, and German, with one year of experience in Tokyo and Osaka and a track record of leading technical projects in cross-cultural environments.</p>
       <div class="about-links">
         <a href="mailto:salsabil.ouni.i@gmail.com" class="al email">salsabil.ouni.i@gmail.com</a>
         <a href="https://linkedin.com/in/salsabil-ouni/" target="_blank" class="al linkedin">LinkedIn</a>
@@ -98,23 +69,20 @@
 </section>
 </div>
 
-<div class="ribbon" aria-hidden="true"></div>
-
 <!-- ══ EXPERIENCE ══ -->
 <div id="exp-wrap">
 <section id="experience">
   <div class="sec-hd"><h2 class="sec-title">Experience</h2><div class="sec-line"></div></div>
-  <div class="sec-gif"><img src="gifs/cofveve.gif" alt="" /></div>
   <div class="timeline">
 
     <div class="ti reveal">
-      <div class="ti-dot"><img src="gifs/daily-cinnamon-photos-v0-x2sq0leogsdd1.jpg" alt="" /></div>
+      <div class="ti-dot">FH</div>
       <div class="ti-card">
         <div class="ti-hd">
           <div><div class="ti-co">FARHAT HACHED HOSPITAL</div><div class="ti-role">Structural Genomics and Computational Bioinformatics Researcher</div><div class="ti-loc">Sousse, Tunisia</div></div>
           <span class="ti-date">Feb 2026 – Present</span>
         </div>
-          <ul>
+        <ul>
           <li>Engineered 3D structural patches as physicochemical feature descriptors to statistically validate variant pathogenicity classification in TP53, modeling protein microenvironment topology and biochemistry.</li>
           <li>Built a computational pipeline (<strong>Python</strong>, <strong>FoldX</strong> , <strong>ΔΔG</strong>, <strong>PDB/Fireprot APIs</strong>) integrating automated hotspot detection and free-energy estimation with statistical correlation analysis to validate structural features as predictive signals, supporting VUS interpretation.</li>
           <li>Utilized <strong>PyTorch</strong> and <strong>Scikit-learn</strong> for downstream model development.</li>
@@ -123,7 +91,7 @@
     </div>
 
     <div class="ti reveal">
-      <div class="ti-dot"><img src="gifs/pin-1ac6f7.jpg" alt="" /></div>
+      <div class="ti-dot">AR</div>
       <div class="ti-card">
         <div class="ti-hd">
           <div><div class="ti-co">ARCADIA</div><div class="ti-role">Machine Learning Intern</div><div class="ti-loc">Osaka, Japan</div></div>
@@ -137,7 +105,7 @@
     </div>
 
     <div class="ti reveal">
-      <div class="ti-dot"><img src="gifs/pin-7e11e6.jpg" alt="" /></div>
+      <div class="ti-dot">PS</div>
       <div class="ti-card">
         <div class="ti-hd">
           <div><div class="ti-co">PURA SOLUTIONS</div><div class="ti-role">Artificial Intelligence Intern</div><div class="ti-loc">Sousse, Tunisia</div></div>
@@ -151,7 +119,7 @@
     </div>
 
     <div class="ti reveal">
-      <div class="ti-dot"><img src="gifs/pin-e5eb2f.jpg" alt="" /></div>
+      <div class="ti-dot">SN</div>
       <div class="ti-card">
         <div class="ti-hd">
           <div><div class="ti-co">SYSTEMS NAKASHIMA</div><div class="ti-role">Machine Learning &amp; Full Stack Intern</div><div class="ti-loc">Tokyo, Japan</div></div>
@@ -165,7 +133,7 @@
     </div>
 
     <div class="ti reveal">
-      <div class="ti-dot"><img src="gifs/pin-8c085d.jpg" alt="" /></div>
+      <div class="ti-dot">SN</div>
       <div class="ti-card">
         <div class="ti-hd">
           <div><div class="ti-co">SYSTEMS NAKASHIMA</div><div class="ti-role">AI &amp; Full Stack Intern</div><div class="ti-loc">Tokyo, Japan</div></div>
@@ -179,7 +147,7 @@
     </div>
 
     <div class="ti reveal">
-      <div class="ti-dot"><img src="gifs/pin-91e336.jpg" alt="" /></div>
+      <div class="ti-dot">EN</div>
       <div class="ti-card">
         <div class="ti-hd">
           <div><div class="ti-co">ENVAST</div><div class="ti-role">Machine Learning Intern</div><div class="ti-loc">Sousse, Tunisia</div></div>
@@ -193,7 +161,7 @@
     </div>
 
     <div class="ti reveal">
-      <div class="ti-dot"><img src="gifs/cinnamoroll-work-4.webp" alt="" /></div>
+      <div class="ti-dot">CO</div>
       <div class="ti-card">
         <div class="ti-hd">
           <div><div class="ti-co">CONTINUOUS</div><div class="ti-role">Front End Intern</div><div class="ti-loc">Sousse, Tunisia</div></div>
@@ -210,19 +178,14 @@
 </section>
 </div>
 
-<div class="ribbon" aria-hidden="true"></div>
-
 <!-- ══ EDUCATION ══ -->
 <div id="edu-wrap">
 <section id="education">
   <div class="sec-hd"><h2 class="sec-title">Education</h2><div class="sec-line"></div></div>
-  <div class="edu-gifs">
-    <div class="eg"><img src="gifs/pin-17d58c.gif" alt="" /></div>
-  </div>
   <div class="edu-grid">
     <div class="edu-card reveal">
       <div class="edu-school">Faculty of Medicine Ibn El Jazzar of Sousse</div>
-      <div class="edu-deg">Master's in Molecular Medicine ,  AI applied to Genetics, Immunology &amp; Microbiology</div>
+      <div class="edu-deg">Master's in Molecular Medicine — AI applied to Genetics, Immunology &amp; Microbiology</div>
       <span class="edu-yr">2024 – Present</span>
     </div>
     <div class="edu-card reveal">
@@ -239,13 +202,10 @@
 </section>
 </div>
 
-<div class="ribbon" aria-hidden="true"></div>
-
 <!-- ══ SKILLS ══ -->
 <div id="skills-wrap">
 <section id="skills">
   <div class="sec-hd"><h2 class="sec-title">Skills</h2><div class="sec-line"></div></div>
-  <div class="sec-gif"><img src="gifs/cinnamoroll-work-3.webp" alt="" /></div>
   <div class="sk-grp reveal"><div class="sk-grp-title">AI / Machine Learning</div>
     <div class="pills"><span class="pill p-bl">PyTorch</span><span class="pill p-bl">Transformers</span><span class="pill p-bl">Hugging Face</span><span class="pill p-bl">LLMs</span><span class="pill p-bl">NLP</span><span class="pill p-bl">Computer Vision (CV)</span><span class="pill p-bl">Scikit-learn</span><span class="pill p-bl">NumPy</span><span class="pill p-bl">Pandas</span><span class="pill p-bl">Bioinformatics</span></div>
   </div>
@@ -255,7 +215,7 @@
   <div class="sk-grp reveal"><div class="sk-grp-title">Databases</div>
     <div class="pills"><span class="pill p-lv">SQL</span><span class="pill p-lv">PostgreSQL</span><span class="pill p-lv">Oracle</span></div>
   </div>
-  <div class="sk-grp reveal"><div class="sk-grp-title">☁️ Cloud &amp; DevOps</div>
+  <div class="sk-grp reveal"><div class="sk-grp-title">Cloud &amp; DevOps</div>
     <div class="pills"><span class="pill p-mn">AWS</span><span class="pill p-mn">Azure</span><span class="pill p-mn">Docker</span><span class="pill p-mn">Linux/WSL</span><span class="pill p-mn">Bash</span><span class="pill p-mn">Git</span><span class="pill p-mn">Apache Kafka</span></div>
   </div>
   <div class="sk-grp reveal"><div class="sk-grp-title">Computational Biology / Bioinformatics</div>
@@ -264,81 +224,69 @@
 </section>
 </div>
 
-<div class="ribbon" aria-hidden="true"></div>
-
 <!-- ══ PROJECTS ══ -->
 <div id="proj-wrap">
 <section id="projects">
   <div class="sec-hd"><h2 class="sec-title">Projects</h2><div class="sec-line"></div></div>
-  <div class="proj-gifs">
-    <div class="pg"><img src="gifs/18-1.png" alt="" /></div>
-  </div>
   <div class="proj-grid">
 
     <div class="pc reveal"
-      data-name="Per-Residue Protein Secondary Structure Prediction" 
-      data-desc="Deep learning pipeline predicting per-residue secondary structure (helix, sheet, coil) on protein sequences. Compares four architectures : CNN, BiGRU, BiLSTM, and hybrid, with the BiLSTM achieving 78.23% accuracy. Applied to the real human TP53 tumor suppressor with interactive 3D visualization."
+      data-name="Per-Residue Protein Secondary Structure Prediction" data-icon="🧬"
+      data-desc="Deep learning pipeline predicting per-residue secondary structure (helix, sheet, coil) on protein sequences. Compares four architectures: CNN, BiGRU, BiLSTM, and hybrid — BiLSTM achieving 78.23% accuracy. Applied to human TP53 with interactive 3D visualization."
       data-tech="PyTorch,BiLSTM,CNN,BiGRU,NumPy,scikit-learn,py3Dmol,Matplotlib"
       data-video="media/Enregistrement 2026-05-20 220640.mp4"
       data-demo="" data-github="https://github.com/Salsabil-Ouni/Per-Residue-Protein-Secondary-Structure-Prediction">
       <div class="pc-name">Per-Residue Secondary Structure Prediction</div>
       <div class="pc-desc">BiLSTM model predicting helix/sheet/coil at each residue with 78.23% accuracy, applied to human TP53 with 3D visualization.</div>
-      <div class="pc-hint">tap for details →</div>
+      <div class="pc-hint">click for details →</div>
     </div>
 
     <div class="pc reveal"
-      data-name="Protein 3D Viewer" 
+      data-name="Protein 3D Viewer" data-icon="🔬"
       data-desc="Flutter mobile app for interactive 3D protein structure visualization using the RCSB Protein Data Bank API. Features JWT authentication, real-time PDB data fetching, NGL.js molecular rendering inside a WebView, physicochemical property extraction, and offline support via Hive local storage."
       data-tech="Flutter,Dart,NGL.js,Riverpod,Hive,dio,RCSB PDB API"
       data-demo="" data-github="https://github.com/Salsabil-Ouni/Protein-3D-Viewer">
       <div class="pc-name">Protein 3D Viewer</div>
       <div class="pc-desc">Flutter mobile app for interactive 3D protein structure visualization with real-time RCSB PDB data and offline support.</div>
-      <div class="pc-hint">tap for details →</div>
+      <div class="pc-hint">click for details →</div>
     </div>
 
     <div class="pc reveal"
-      data-name="Protein Thermostability Prediction" 
-      data-desc="Binary classifier predicting whether a protein survives extreme heat (>75°C) from sequence alone , no 3D structure needed. Trained on 16,500 UniProt proteins with 429 extracted features (amino acid composition, dipeptide frequencies, physicochemical properties), achieving 93.8% accuracy and 0.983 ROC-AUC with HistGradientBoosting."
+      data-name="Protein Thermostability Prediction" data-icon="🔥"
+      data-desc="Binary classifier predicting whether a protein survives extreme heat (>75°C) from sequence alone — no 3D structure needed. Trained on 16,500 UniProt proteins with 429 extracted features, achieving 93.8% accuracy and 0.983 ROC-AUC with HistGradientBoosting."
       data-tech="Python,scikit-learn,Streamlit,pandas,NumPy,UniProt"
       data-demo="" data-github="https://github.com/Salsabil-Ouni/Protein-Thermostability-Prediction">
       <div class="pc-name">Protein Thermostability Prediction</div>
-      <div class="pc-desc">93.8% accuracy classifier predicting protein heat stability (>75°C) from sequence features alone, trained on 16,500 UniProt proteins.</div>
-      <div class="pc-hint">tap for details →</div>
+      <div class="pc-desc">93.8% accuracy classifier predicting protein heat stability (&gt;75°C) from sequence features alone, trained on 16,500 UniProt proteins.</div>
+      <div class="pc-hint">click for details →</div>
     </div>
 
-    <div class="pc reveal" style="background:var(--sky-light);border-color:var(--blue);cursor:default;">
-      
-      <div class="pc-name">more coming soon !! </div>
-      <div class="pc-desc">always building something new: NLP, healthcare, whatever turns out to be interesting (and cinnamoroll themed when possible!).</div>
+    <div class="pc reveal" style="background:var(--sky-light);cursor:default;">
+      <div class="pc-name">more coming soon</div>
+      <div class="pc-desc">Always building something new: NLP, healthcare AI, computational biology — whatever turns out to be interesting.</div>
     </div>
 
   </div>
 </section>
 </div>
-
-<div class="ribbon" aria-hidden="true"></div>
 
 <!-- ══ CERTIFICATIONS ══ -->
 <div id="cert-wrap">
 <section id="certifications">
   <div class="sec-hd"><h2 class="sec-title">Certifications</h2><div class="sec-line"></div></div>
-  <div class="sec-gif cert-gif"><img src="gifs/sticker_18.gif" alt="" /></div>
   <div class="cert-grid">
-    <div class="cc reveal">   <div><div class="cc-name">Fundamentals of Deep Learning</div><div class="cc-issuer">NVIDIA</div></div></div>
-    <div class="cc reveal"><div><div class="cc-name">Introduction to Transformer-Based NLP</div><div class="cc-issuer">NVIDIA</div></div></div>
-    <div class="cc reveal"><div><div class="cc-name">Generative AI with Diffusion Models</div><div class="cc-issuer">NVIDIA</div></div></div>
-    <div class="cc reveal"><div><div class="cc-name">Microsoft Azure Data Fundamentals</div><div class="cc-issuer">Microsoft</div></div></div>
+    <div class="cc reveal"><div class="cc-badge nv">N</div><div><div class="cc-name">Fundamentals of Deep Learning</div><div class="cc-issuer">NVIDIA</div></div></div>
+    <div class="cc reveal"><div class="cc-badge nv">N</div><div><div class="cc-name">Introduction to Transformer-Based NLP</div><div class="cc-issuer">NVIDIA</div></div></div>
+    <div class="cc reveal"><div class="cc-badge nv">N</div><div><div class="cc-name">Generative AI with Diffusion Models</div><div class="cc-issuer">NVIDIA</div></div></div>
+    <div class="cc reveal"><div class="cc-badge az">M</div><div><div class="cc-name">Microsoft Azure Data Fundamentals</div><div class="cc-issuer">Microsoft</div></div></div>
   </div>
 </section>
 </div>
-
-<div class="ribbon" aria-hidden="true"></div>
 
 <!-- ══ LANGUAGES ══ -->
 <div id="lang-wrap">
 <section id="languages">
   <div class="sec-hd"><h2 class="sec-title">Languages</h2><div class="sec-line"></div></div>
-  <div class="sec-gif"><img src="gifs/cinnamoroll-sticker.gif" alt="" /></div>
   <div class="lang-grid">
     <div class="lc reveal"><div class="lc-flag"></div><div class="lc-name">English</div><div class="lc-lvl">Fluent</div><div class="lc-dots"><div class="ld f"></div><div class="ld f"></div><div class="ld f"></div><div class="ld f"></div><div class="ld f"></div></div></div>
     <div class="lc reveal"><div class="lc-flag"></div><div class="lc-name">French</div><div class="lc-lvl">Fluent</div><div class="lc-dots"><div class="ld f"></div><div class="ld f"></div><div class="ld f"></div><div class="ld f"></div><div class="ld f"></div></div></div>
@@ -349,23 +297,18 @@
 </section>
 </div>
 
-<div class="ribbon" aria-hidden="true"></div>
-
 <!-- ══ ACHIEVEMENT ══ -->
 <div id="ach-wrap">
 <section id="achievement">
   <div class="sec-hd"><h2 class="sec-title">Achievement</h2><div class="sec-line"></div></div>
-  <div class="sec-gif"><img src="gifs/cinnamoroll-work-2.webp" alt="" /></div>
   <div class="ach-grid">
     <div class="ach-card reveal">
-      <div class="ach-trophy"><img src="gifs/cinnamoroll-kawaii.webp" alt="" /></div>
       <div class="ach-text">
         <h3>AIESEC Waseda Japan Global Talent 2023</h3>
         <p>Selected as a Global Talent out of <strong>22 countries worldwide</strong> through AIESEC Waseda, which led to my first internship in Tokyo. Pretty much changed the direction of everything after that.</p>
       </div>
     </div>
     <div class="ach-card reveal">
-      <div class="ach-trophy"><img src="gifs/cinnamoroll-work-3.webp" alt="" /></div>
       <div class="ach-text">
         <h3>Aintone at Tokyo Big Sight 2023</h3>
         <p>Our AI sales trend prediction system <strong>Aintone</strong> was showcased at <strong>Tokyo Big Sight</strong>, one of Japan's largest exhibition venues, attracting <strong>500+ attendees</strong>.</p>
@@ -380,14 +323,13 @@
 <div id="vol-wrap">
 <section id="volunteering">
   <div class="sec-hd"><h2 class="sec-title">Volunteering</h2><div class="sec-line"></div></div>
-  <div class="sec-gif"><img src="gifs/greaaatt.gif" alt="" /></div>
   <div class="vol-grid">
-    <div class="vc reveal"><div class="vc-icon"></div><div><div class="vc-title">TEDx Hadrumet</div><div class="vc-role">Marketing Manager</div><span class="vc-yr">2025</span></div></div>
-    <div class="vc reveal"><div class="vc-icon"></div><div><div class="vc-title">AIESEC Global Talents</div><div class="vc-role">Outgoing Global Talents Team Member</div><span class="vc-yr">2025</span></div></div>
-    <div class="vc reveal"><div class="vc-icon"></div><div><div class="vc-title">IEEE Sight Group ISSATSO SB</div><div class="vc-role">Chairwoman</div><span class="vc-yr">2024</span></div></div>
-    <div class="vc reveal"><div class="vc-icon"></div><div><div class="vc-title">IEEE Computer Society  ISSATSO SB</div><div class="vc-role">Vice Chairwoman</div><span class="vc-yr">2023</span></div></div>
-    <div class="vc reveal"><div class="vc-icon"></div><div><div class="vc-title">IEEE Women in Engineering  ISSATSO SB</div><div class="vc-role">Vice Chairwoman</div><span class="vc-yr">2022</span></div></div>
-    <div class="vc reveal"><div class="vc-icon"></div><div><div class="vc-title">IEEE ISSATSO Student Branch</div><div class="vc-role">External Relations Committee Lead</div><span class="vc-yr">2022</span></div></div>
+    <div class="vc reveal"><div><div class="vc-title">TEDx Hadrumet</div><div class="vc-role">Marketing Manager</div><span class="vc-yr">2025</span></div></div>
+    <div class="vc reveal"><div><div class="vc-title">AIESEC Global Talents</div><div class="vc-role">Outgoing Global Talents Team Member</div><span class="vc-yr">2025</span></div></div>
+    <div class="vc reveal"><div><div class="vc-title">IEEE Sight Group ISSATSO SB</div><div class="vc-role">Chairwoman</div><span class="vc-yr">2024</span></div></div>
+    <div class="vc reveal"><div><div class="vc-title">IEEE Computer Society ISSATSO SB</div><div class="vc-role">Vice Chairwoman</div><span class="vc-yr">2023</span></div></div>
+    <div class="vc reveal"><div><div class="vc-title">IEEE Women in Engineering ISSATSO SB</div><div class="vc-role">Vice Chairwoman</div><span class="vc-yr">2022</span></div></div>
+    <div class="vc reveal"><div><div class="vc-title">IEEE ISSATSO Student Branch</div><div class="vc-role">External Relations Committee Lead</div><span class="vc-yr">2022</span></div></div>
   </div>
 </section>
 </div>
@@ -395,13 +337,10 @@
 <!-- ══ CONTACT ══ -->
 <div id="contact-wrap">
 <section id="contact">
-  <div class="contact-gifs">
-    <div class="cg"><img src="gifs/cinnamoroll-sanrio-char3.webp" alt="" /></div>
-  </div>
-  <h2 class="con-title">let's talk ☁️</h2>
-  <p class="con-sub">always happy to chat about work, ideas, or anything in between</p>
+  <h2 class="con-title">Let's Talk</h2>
+  <p class="con-sub">Always happy to chat about work, ideas, or anything in between</p>
   <div class="con-btns">
-    <a href="mailto:salsabil.ouni.i@gmail.com" class="btn btn-p">say hello</a>
+    <a href="mailto:salsabil.ouni.i@gmail.com" class="btn btn-p">Say hello</a>
     <a href="https://linkedin.com/in/salsabil-ouni/" target="_blank" class="btn btn-s">LinkedIn</a>
     <a href="https://github.com/Salsabil-Ouni" target="_blank" class="btn btn-s">GitHub</a>
   </div>
@@ -411,10 +350,7 @@
 </main>
 
 <!-- ══ BACK TO TOP ══ -->
-<button id="btt" aria-label="Back to top">
-  <img src="gifs/cinna-top.gif" alt="Cinnamoroll" />
-  <span>↑ top</span>
-</button>
+<button id="btt" aria-label="Back to top">↑</button>
 
 <!-- ══ PROJECT MODAL ══ -->
 <div id="proj-modal">
@@ -440,7 +376,7 @@
 <div id="resume-modal">
   <div class="modal-box">
     <div class="modal-header">
-      <span>☁️ my resume</span>
+      <span>Resume — Salsabil Ouni</span>
       <button class="modal-close" onclick="document.getElementById('resume-modal').classList.remove('open')" aria-label="Close">✕</button>
     </div>
     <iframe src="media/CV_Salsabil_Ouni.pdf" title="Resume"></iframe>
@@ -448,9 +384,8 @@
 </div>
 
 <!-- ══ FOOTER ══ -->
-<footer>
-  <p>built with love, fully approved by <span style="color:var(--pink)">Cinnamoroll ☁️</span></p>
-  <p style="margin-top:6px;"><a href="blog.html"> visit my blog →</a></p>
+<footer>  
+  <p>Salsabil Ouni &nbsp;·&nbsp; AI Engineer &nbsp;·&nbsp; <a href="mailto:salsabil.ouni.i@gmail.com">salsabil.ouni.i@gmail.com</a></p>
 </footer>
 
 <script src="js/main.js"></script>
