@@ -51,12 +51,6 @@ nav {
 }
 .nav-links a:hover  { background:var(--sky); color:var(--blue-dark); border-color:var(--blue); transform:translateY(-2px); }
 .nav-links a.active { background:var(--sky); color:var(--blue-dark); border-color:var(--blue); }
-.nav-blog-btn {
-  text-decoration:none; font-size:.72rem; font-weight:800; white-space:nowrap; flex-shrink:0;
-  background:var(--pink-light); color:#c0507a; border:2px solid var(--pink);
-  border-radius:99px; padding:4px 13px; transition:all .3s;
-}
-.nav-blog-btn:hover { background:var(--pink); color:#fff; transform:translateY(-2px); }
 .nav-recruiter-btn {
   text-decoration:none; font-size:.72rem; font-weight:800; white-space:nowrap; flex-shrink:0;
   background:#1e2d3d; color:#fff;
@@ -429,7 +423,6 @@ footer a:hover { text-decoration:underline; }
   }
   .nav-burger:hover { background:var(--sky); }
   .nav-recruiter-btn { order:2; font-size:.68rem; padding:4px 10px; }
-  .nav-blog-btn { order:2; }
   .nav-links {
     display:none; order:4; width:100%;
     flex-direction:column; gap:4px;

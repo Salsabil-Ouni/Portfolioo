@@ -60,13 +60,6 @@ nav {
 .nav-links a:hover  { background:var(--sky); color:var(--blue-dark); }
 .nav-links a.active { background:var(--sky); color:var(--blue-dark); }
 .nav-right { display:flex; align-items:center; gap:8px; }
-.nav-blog-btn {
-  text-decoration:none; font-size:.72rem; font-weight:700; white-space:nowrap;
-  background:var(--sky); color:var(--blue-mid);
-  border-radius:99px; padding:5px 16px; transition:all .2s;
-  box-shadow:0 2px 8px var(--shadow);
-}
-.nav-blog-btn:hover { background:var(--blue); color:#fff; }
 .nav-portfolio-btn {
   text-decoration:none; font-size:.72rem; font-weight:700; white-space:nowrap;
   background:var(--pink-light); color:var(--blue-mid);
