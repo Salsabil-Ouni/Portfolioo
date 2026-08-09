@@ -37,7 +37,7 @@
 <section id="hero">
   <div class="hero-content">
     <h1 class="hero-title">Salsabil <span>Ouni</span></h1>
-    <p class="hero-sub">AI Engineer · Full Stack · Computational Biology</p>
+    <p class="hero-sub">AI & ML Engineer · Full Stack · Protein Bioinformatics</p>
     <p class="hero-loc">Tunisia, Sousse </p>
     <div class="hero-badge"><span class="hero-badge-dot"></span> Open to opportunities</div>
     <div class="hero-btns">
@@ -373,14 +373,36 @@
   </div>
 </div>
 
+<!-- ══ FIELD SELECTOR MODAL ══ -->
+<div id="field-modal" class="field-modal">
+  <div class="field-box">
+    <button class="field-close" onclick="document.getElementById('field-modal').classList.remove('open')">✕</button>
+    <p class="field-eyebrow">Welcome</p>
+    <h2 class="field-title">What's your field?</h2>
+    <p class="field-sub">I'll pull up the most relevant version of my CV for you.</p>
+    <div class="field-options">
+      <button class="field-opt" data-cv="media/Salsabil_Ouni_CV_A.pdf" data-track="Tech / IT">
+        <span class="field-badge">IT</span>
+        <span class="field-name">Tech &amp; AI</span>
+        <span class="field-desc">Machine Learning, Software Engineering, Data Science</span>
+      </button>
+      <button class="field-opt" data-cv="media/Salsabil_Ouni_CV_C.pdf" data-track="Life Sciences">
+        <span class="field-badge bio">BIO</span>
+        <span class="field-name">AI for Genetics &amp; Biology</span>
+        <span class="field-desc">Machine learning for genomics, Protein Bioinformatics</span>
+      </button>
+    </div>
+  </div>
+</div>
+
 <!-- ══ RESUME MODAL ══ -->
 <div id="resume-modal">
   <div class="modal-box">
     <div class="modal-header">
-      <span>Resume — Salsabil Ouni</span>
+      <span id="resume-modal-label">Resume — Salsabil Ouni</span>
       <button class="modal-close" onclick="document.getElementById('resume-modal').classList.remove('open')" aria-label="Close">✕</button>
     </div>
-    <iframe src="media/CV_Salsabil_Ouni.pdf" title="Resume"></iframe>
+    <iframe id="resume-iframe" src="" title="Resume"></iframe>
   </div>
 </div>
 
@@ -390,5 +412,37 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script>
+(function(){
+  var fieldModal   = document.getElementById('field-modal');
+  var resumeIframe = document.getElementById('resume-iframe');
+  var resumeLabel  = document.getElementById('resume-modal-label');
+
+  function selectTrack(cv, track) {
+    fieldModal.classList.remove('open');
+    if (cv) {
+      resumeIframe.src = cv;
+      resumeLabel.textContent = 'Resume — Salsabil Ouni (' + track + ')';
+    }
+    document.getElementById('resume-modal').classList.add('open');
+  }
+
+  document.querySelectorAll('.field-opt').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      selectTrack(this.dataset.cv, this.dataset.track);
+    });
+  });
+
+
+  document.querySelector('[onclick*="resume-modal"]').onclick = function(e) {
+    e.preventDefault();
+    fieldModal.classList.add('open');
+  };
+
+  fieldModal.addEventListener('click', function(e) {
+    if (e.target === fieldModal) fieldModal.classList.remove('open');
+  });
+})();
+</script>
 </body>
 </html>

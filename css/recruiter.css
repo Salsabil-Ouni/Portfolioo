@@ -402,3 +402,74 @@ footer a:hover { text-decoration:underline; }
   .hero-btns .btn { flex:1; justify-content:center; min-width:140px; }
   .lang-grid { grid-template-columns:repeat(2,1fr); }
 }
+
+/* ══ FIELD SELECTOR MODAL ══ */
+.field-modal {
+  position:fixed; inset:0; z-index:900;
+  background:rgba(15,23,42,.55); backdrop-filter:blur(6px);
+  display:flex; align-items:center; justify-content:center;
+  opacity:0; pointer-events:none;
+  transition:opacity .3s;
+}
+.field-modal.open { opacity:1; pointer-events:all; }
+
+.field-box {
+  background:#fff; border-radius:24px;
+  padding:44px 40px 36px; max-width:520px; width:calc(100% - 40px);
+  box-shadow:0 24px 64px rgba(99,102,241,.18);
+  text-align:center;
+  transform:translateY(16px); transition:transform .3s;
+}
+.field-modal.open .field-box { transform:translateY(0); }
+.field-close {
+  position:absolute; top:12px; right:14px;
+  background:none; border:none; cursor:pointer;
+  font-size:.85rem; color:var(--text-light); transition:color .2s;
+}
+.field-close:hover { color:var(--blue-dark); }
+.field-box { position:relative; }
+
+.field-eyebrow {
+  font-size:.72rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--blue); margin-bottom:10px;
+}
+.field-title {
+  font-size:1.6rem; font-weight:800; color:var(--text);
+  margin-bottom:8px; line-height:1.2;
+}
+.field-sub {
+  font-size:.9rem; color:var(--text-light); margin-bottom:32px;
+}
+
+.field-options {
+  display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:22px;
+}
+.field-opt {
+  display:flex; flex-direction:column; align-items:center; gap:10px;
+  background:var(--sky); border:2px solid transparent; border-radius:18px;
+  padding:24px 16px; cursor:pointer;
+  transition:all .2s; font-family:'Plus Jakarta Sans',sans-serif;
+}
+.field-opt:hover {
+  border-color:var(--blue); background:#fff;
+  box-shadow:0 8px 28px rgba(99,102,241,.15);
+  transform:translateY(-3px);
+}
+.field-badge {
+  display:inline-flex; align-items:center; justify-content:center;
+  width:44px; height:44px; border-radius:12px;
+  background:var(--blue); color:#fff;
+  font-size:.7rem; font-weight:800; letter-spacing:.05em;
+}
+.field-badge.bio { background:#0ea5a0; }
+.field-name {
+  font-size:.95rem; font-weight:800; color:var(--text);
+}
+.field-desc {
+  font-size:.75rem; color:var(--text-light); line-height:1.4;
+}
+
+@media(max-width:480px) {
+  .field-box { padding:32px 20px 28px; }
+  .field-options { grid-template-columns:1fr; }
+}

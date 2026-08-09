@@ -43,11 +43,11 @@
   </div>
   <div class="hero-content">
     <h1 class="hero-title">Salsabil Ouni</h1>
-    <p class="hero-sub">AI Engineer · Full Stack · Comp Bio</p>
+    <p class="hero-sub">AI & ML Engineer · Full Stack · Protein Stuff</p>
     <p class="hero-loc">☁️ Tunisia, Sousse &nbsp;•&nbsp; open to all adventures!</p>
     <div class="hero-btns">
       <a href="mailto:salsabil.ouni.i@gmail.com" class="btn btn-p">say hi to me!</a>
-      <button onclick="document.getElementById('resume-modal').classList.add('open')" class="btn btn-s">view my resume</button>
+      <button id="view-resume-btn" class="btn btn-s">view my resume</button>
       <a href="https://linkedin.com/in/salsabil-ouni/" target="_blank" class="btn btn-s">LinkedIn</a>
       <a href="https://github.com/Salsabil-Ouni" target="_blank" class="btn btn-s">GitHub</a>
     </div>
@@ -437,14 +437,36 @@
   </div>
 </div>
 
+<!-- ══ FIELD SELECTOR MODAL ══ -->
+<div id="field-modal" class="field-modal">
+  <div class="field-box">
+    <button class="field-close" onclick="document.getElementById('field-modal').classList.remove('open')">✕</button>
+    <p class="field-eyebrow">☁️ hey there!</p>
+    <h2 class="field-title">what's your field?</h2>
+    <p class="field-sub">i'll show you the most relevant version of my CV~</p>
+    <div class="field-options">
+      <button class="field-opt" data-cv="media/Salsabil_Ouni_CV_A.pdf" data-track="Tech / IT">
+        <img class="field-img" src="media/it.jpg" alt="Tech" />
+        <span class="field-name">Tech &amp; AI Stuff! </span>
+        <span class="field-desc">Software, machine learning, data science</span>
+      </button>
+      <button class="field-opt" data-cv="media/Salsabil_Ouni_CV_C.pdf" data-track="Life Sciences">
+        <img class="field-img" src="media/bio.jpg" alt="Bio" />
+        <span class="field-name">Bio Stuff!</span>
+        <span class="field-desc">Computational biology, genomics, molecular medicine</span>
+      </button>
+    </div>
+  </div>
+</div>
+
 <!-- ══ RESUME MODAL ══ -->
 <div id="resume-modal">
   <div class="modal-box">
     <div class="modal-header">
-      <span>☁️ my resume</span>
+      <span id="resume-modal-label">☁️ my resume</span>
       <button class="modal-close" onclick="document.getElementById('resume-modal').classList.remove('open')" aria-label="Close">✕</button>
     </div>
-    <iframe src="media/CV_Salsabil_Ouni.pdf" title="Resume"></iframe>
+    <iframe id="resume-iframe" src="" title="Resume"></iframe>
   </div>
 </div>
 
@@ -452,6 +474,35 @@
 <footer>
   <p>built with love, fully approved by <span style="color:var(--pink)">Cinnamoroll ☁️</span></p>
 </footer>
+
+<script>
+(function(){
+  var fieldModal   = document.getElementById('field-modal');
+  var resumeIframe = document.getElementById('resume-iframe');
+  var resumeLabel  = document.getElementById('resume-modal-label');
+
+  function selectTrack(cv, track) {
+    fieldModal.classList.remove('open');
+    resumeIframe.src = cv;
+    resumeLabel.textContent = '☁️ my resume (' + track + ')';
+    document.getElementById('resume-modal').classList.add('open');
+  }
+
+  document.querySelectorAll('#field-modal .field-opt').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      selectTrack(this.dataset.cv, this.dataset.track);
+    });
+  });
+
+  document.getElementById('view-resume-btn').addEventListener('click', function() {
+    fieldModal.classList.add('open');
+  });
+
+  fieldModal.addEventListener('click', function(e) {
+    if (e.target === fieldModal) fieldModal.classList.remove('open');
+  });
+})();
+</script>
 
 <script src="js/main.js"></script>
 
@@ -487,7 +538,7 @@
     { title: '青い珊瑚礁 / シナモン',            src: ms('【歌ってみた】青い珊瑚礁 _ シナモン [LkzENyswNgc].mp3'),                                                                         art: 'https://img.youtube.com/vi/LkzENyswNgc/mqdefault.jpg' },
     { title: 'KAWAII FESTIVAL / シナモン',       src: ms('KAWAII FESTIVAL_シナモン【歌ってみた】 [22i7iUEqrtc].mp3'),                                                                   art: 'https://img.youtube.com/vi/22i7iUEqrtc/mqdefault.jpg' },
     { title: 'キミのこと、だいだいすきだもん☆', src: ms('シナモロール「キミのこと、だいだいすきだもん☆」【ショートアニメ・テーマソング】（Full Ver.） [K7eI5S2F9Pg].mp3'), art: 'https://img.youtube.com/vi/K7eI5S2F9Pg/mqdefault.jpg' },
-    { title: '寝起きヤシの木 / シナモン',        src: ms('寝起きヤシの木 _ シナモン【歌ってみた】.mp3'),                                                                                   art: 'gifs/cinnamoroll-main.webp' },
+    { title: '寝起きヤシの木 / シナモン',        src: ms('寝起きヤシの木 _ シナモン【歌ってみた】 [DAiWR7BKqxY].mp3'),                                                                    art: 'https://img.youtube.com/vi/DAiWR7BKqxY/mqdefault.jpg' },
   ];
 
   var idx   = 0;
