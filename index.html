@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Salsabil Ouni ☁️ ~ AI Engineer Portfolio</title>
   <link rel="icon" href="gifs/cinnamoroll-kawaii.webp" type="image/webp" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Pacifico&family=Press+Start+2P&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -454,5 +454,80 @@
 </footer>
 
 <script src="js/main.js"></script>
+
+<!-- ══ MUSIC PLAYER ══ -->
+<audio id="mp-audio"></audio>
+<div class="mp-wrap">
+  <div class="mp-player" id="music-player">
+    <button class="mp-close" id="mp-close">✕</button>
+    <div class="mp-titlebar">
+      <div class="mp-marquee-wrap"><span class="mp-marquee" id="mp-title">♪ press play ~</span></div>
+    </div>
+    <div class="mp-art-wrap">
+      <img class="mp-art" id="mp-art" src="https://img.youtube.com/vi/LkzENyswNgc/mqdefault.jpg" alt="" />
+      <div class="mp-art-overlay" id="mp-overlay">▶</div>
+    </div>
+    <div class="mp-ctrl-row">
+      <button class="mp-c mp-prev" id="mp-prev">◀◀</button>
+      <button class="mp-c mp-play" id="mp-play">▶</button>
+      <button class="mp-c mp-next" id="mp-next">▶▶</button>
+    </div>
+    <div class="mp-bottom-row">
+      <span class="mp-label" id="mp-label">click to play~</span>
+      <div class="mp-hearts">♥ ♥ ♥</div>
+    </div>
+  </div>
+  <button class="mp-toggle" id="mp-toggle">♪</button>
+</div>
+
+<script>
+(function(){
+  function ms(f){ return 'media/music/' + encodeURIComponent(f); }
+  var songs = [
+    { title: '青い珊瑚礁 / シナモン',            src: ms('【歌ってみた】青い珊瑚礁 _ シナモン [LkzENyswNgc].mp3'),                                                                         art: 'https://img.youtube.com/vi/LkzENyswNgc/mqdefault.jpg' },
+    { title: 'KAWAII FESTIVAL / シナモン',       src: ms('KAWAII FESTIVAL_シナモン【歌ってみた】 [22i7iUEqrtc].mp3'),                                                                   art: 'https://img.youtube.com/vi/22i7iUEqrtc/mqdefault.jpg' },
+    { title: 'キミのこと、だいだいすきだもん☆', src: ms('シナモロール「キミのこと、だいだいすきだもん☆」【ショートアニメ・テーマソング】（Full Ver.） [K7eI5S2F9Pg].mp3'), art: 'https://img.youtube.com/vi/K7eI5S2F9Pg/mqdefault.jpg' },
+    { title: '寝起きヤシの木 / シナモン',        src: ms('寝起きヤシの木 _ シナモン【歌ってみた】.mp3'),                                                                                   art: 'gifs/cinnamoroll-main.webp' },
+  ];
+
+  var idx   = 0;
+  var audio = document.getElementById('mp-audio');
+  var btn   = document.getElementById('mp-play');
+  var ovr   = document.getElementById('mp-overlay');
+  var wrap  = document.getElementById('music-player');
+  var titleEl = document.getElementById('mp-title');
+  var artEl   = document.getElementById('mp-art');
+
+  function load(i, andPlay) {
+    idx = (i + songs.length) % songs.length;
+    var s = songs[idx];
+    audio.src = s.src;
+    artEl.src = s.art;
+    titleEl.textContent = '♪  ' + s.title + '  ';
+    if (andPlay) audio.play();
+  }
+
+  function setPlaying(p) {
+    btn.textContent   = p ? '❚❚' : '▶';
+    ovr.style.opacity = p ? '0'  : '1';
+    wrap.classList.toggle('mp-playing', p);
+    document.getElementById('mp-label').textContent = p ? '♫ now playing' : 'click to play~';
+  }
+
+  audio.addEventListener('play',  function(){ setPlaying(true);  });
+  audio.addEventListener('pause', function(){ setPlaying(false); });
+  audio.addEventListener('ended', function(){ load(idx + 1, true); });
+
+  btn.addEventListener('click', function(){ audio.paused ? audio.play().catch(function(e){ console.error('Play failed:',e,audio.src); }) : audio.pause(); });
+  document.getElementById('mp-prev').addEventListener('click', function(){ load(idx - 1, !audio.paused); });
+  document.getElementById('mp-next').addEventListener('click', function(){ load(idx + 1, !audio.paused); });
+
+  load(0, false);
+
+  var player = document.getElementById('music-player');
+  document.getElementById('mp-toggle').addEventListener('click', function(){ player.classList.toggle('mp-open'); });
+  document.getElementById('mp-close').addEventListener('click',  function(){ player.classList.remove('mp-open'); });
+})();
+</script>
 </body>
 </html>
