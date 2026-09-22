@@ -221,6 +221,28 @@ section { max-width:1100px; margin:0 auto; padding:65px 24px; scroll-margin-top:
 .pc-desc   { font-size:.82rem; color:var(--text-light); line-height:1.65; }
 .pc-hint   { font-size:.68rem; color:var(--blue-mid); font-weight:600; margin-top:10px; }
 
+/* ── Research ── */
+#rsch-wrap { background:#F5F3FF; padding:65px 0; }
+.rsch-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px; }
+.rc {
+  background:#fff; border-radius:22px; padding:22px 20px;
+  box-shadow:0 4px 20px rgba(99,102,241,.08);
+  transition:all .25s; display:flex; flex-direction:column; gap:9px;
+}
+.rc:hover  { transform:translateY(-6px); box-shadow:0 16px 40px rgba(99,102,241,.15); }
+.rc-badge  {
+  display:inline-block; padding:3px 10px; border-radius:20px;
+  background:#EEF2FF; color:var(--blue-dark);
+  font-size:.63rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em;
+}
+.rc-title  { font-weight:800; font-size:.92rem; color:var(--text); line-height:1.45; letter-spacing:-.01em; }
+.rc-desc   { font-size:.81rem; color:var(--text-light); line-height:1.65; flex:1; }
+.rc-link   {
+  font-size:.74rem; font-weight:700; color:var(--blue-mid); text-decoration:none;
+  margin-top:4px; display:inline-block;
+}
+.rc-link:hover { color:var(--blue-dark); text-decoration:underline; }
+
 /* ── Project Modal ── */
 #proj-modal {
   display:none; position:fixed; inset:0; z-index:900;
@@ -381,11 +403,11 @@ footer a:hover { text-decoration:underline; }
   nav.nav-open .nav-links { display:flex; }
   .nav-links a { font-size:.82rem; padding:8px 12px; border-radius:8px; }
   section { padding:48px 18px; }
-  #about-wrap,#exp-wrap,#edu-wrap,#skills-wrap,#proj-wrap,
+  #about-wrap,#exp-wrap,#edu-wrap,#skills-wrap,#proj-wrap,#rsch-wrap,
   #cert-wrap,#lang-wrap,#ach-wrap,#vol-wrap { padding:48px 0; }
   #hero { padding:110px 20px 56px; }
   .about-links { justify-content:center; }
-  .edu-grid,.proj-grid,.cert-grid,.vol-grid { grid-template-columns:1fr; }
+  .edu-grid,.proj-grid,.rsch-grid,.cert-grid,.vol-grid { grid-template-columns:1fr; }
   .lang-grid { grid-template-columns:repeat(2,1fr); }
   .ach-card { flex-direction:column; }
   .timeline::before { left:20px; }
