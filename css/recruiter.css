@@ -317,6 +317,24 @@ section { max-width:1100px; margin:0 auto; padding:65px 24px; scroll-margin-top:
 .ach-text p     { font-size:.84rem; color:var(--text-light); line-height:1.7; }
 .ach-photo      { width:100%; max-height:220px; object-fit:cover; border-radius:12px; margin-top:12px; border:1.5px solid #E8EEFF; }
 
+/* ══ TALKS ══ */
+#talks-wrap { background:#F8FAFF; padding:65px 0; }
+.talks-list { display:flex; flex-direction:column; gap:14px; max-width:720px; margin:0 auto; }
+.tk {
+  display:flex; align-items:flex-start; gap:20px;
+  background:#fff; border-radius:20px; padding:22px 26px;
+  box-shadow:0 4px 20px rgba(99,102,241,.08);
+  transition:box-shadow .25s;
+}
+.tk:hover { box-shadow:0 10px 32px rgba(99,102,241,.14); }
+.tk-year {
+  flex-shrink:0; width:48px; height:48px; border-radius:50%;
+  background:#EEF2FF; color:var(--blue-dark);
+  font-weight:800; font-size:.72rem; display:flex; align-items:center; justify-content:center;
+}
+.tk-title  { font-weight:800; font-size:.95rem; color:var(--text); margin-bottom:4px; letter-spacing:-.01em; }
+.tk-venue  { font-size:.81rem; color:var(--text-light); line-height:1.55; }
+
 /* ══ VOLUNTEERING ══ */
 #vol-wrap { background:#F5F3FF; padding:65px 0; }
 .vol-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
@@ -404,7 +422,7 @@ footer a:hover { text-decoration:underline; }
   .nav-links a { font-size:.82rem; padding:8px 12px; border-radius:8px; }
   section { padding:48px 18px; }
   #about-wrap,#exp-wrap,#edu-wrap,#skills-wrap,#proj-wrap,#rsch-wrap,
-  #cert-wrap,#lang-wrap,#ach-wrap,#vol-wrap { padding:48px 0; }
+  #cert-wrap,#lang-wrap,#ach-wrap,#talks-wrap,#vol-wrap { padding:48px 0; }
   #hero { padding:110px 20px 56px; }
   .about-links { justify-content:center; }
   .edu-grid,.proj-grid,.rsch-grid,.cert-grid,.vol-grid { grid-template-columns:1fr; }
