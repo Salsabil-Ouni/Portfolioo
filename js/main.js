@@ -19,7 +19,7 @@ const obs = new IntersectionObserver(
 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
 /* Active nav highlight */
-const NAV_IDS = ['about','experience','education','skills','projects','certifications','languages','achievement','volunteering','contact'];
+const NAV_IDS = ['about','experience','education','skills','projects','research','certifications','languages','talks','achievement','volunteering','contact'];
 const linkMap = {};
 NAV_IDS.forEach(id => {
   const a = document.querySelector(`.nav-links a[href="#${id}"]`);

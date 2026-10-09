@@ -23,12 +23,19 @@
     <li><a href="#certifications">Certs</a></li>
     <li><a href="#languages">Languages</a></li>
     <li><a href="#talks">Talks</a></li>
-    <li><a href="#achievement">Achievement</a></li>
+    <li><a href="#achievement">Achievements</a></li>
     <li><a href="#volunteering">Volunteering</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="nav-right">
-    <a href="index.html" class="nav-portfolio-btn">← Fun View</a>
+    <div class="fun-wrap">
+      <a href="index.html" class="nav-portfolio-btn" aria-describedby="fun-tip">← Fun View</a>
+      <a href="index.html" class="fun-card" id="fun-tip" tabindex="-1">
+        <img src="gifs/cinnamoroll-hi.gif" alt="" />
+        <span class="fun-text"><strong>psst, there's a cuter version of me!</strong>
+        <span>Cinnamoroll, clouds and a cozy stitch game. Come say hi →</span></span>
+      </a>
+    </div>
     
   </div>
 </nav>
@@ -382,12 +389,6 @@
   <div class="ach-grid">
     <div class="ach-card reveal">
       <div class="ach-text">
-        <h3>16× Hackathon Winner</h3>
-        <p>Won <strong>16 hackathons</strong>, spanning AI, software development, and AI in healthcare.</p>
-      </div>
-    </div>
-    <div class="ach-card reveal">
-      <div class="ach-text">
         <h3>AIESEC Waseda Japan Global Talent 2023</h3>
         <p>Selected as a Global Talent out of <strong>22 countries worldwide</strong> through AIESEC Waseda, which led to my first internship in Tokyo. Pretty much changed the direction of everything after that.</p>
       </div>
@@ -403,6 +404,12 @@
       <div class="ach-text">
         <h3>AIESEC Japan Osaka University Global Talent 2025</h3>
         <p>Selected as a Global Talent out of candidates from <strong>20 countries worldwide</strong> through AIESEC Japan Osaka University, leading to my second internship in Japan.</p>
+      </div>
+    </div>
+    <div class="ach-card reveal">
+      <div class="ach-text">
+        <h3>16× Hackathon Winner</h3>
+        <p>Won <strong>16 hackathons</strong>, spanning AI, software development, and AI in healthcare.</p>
       </div>
     </div>
   </div>
@@ -498,6 +505,7 @@
 <!-- ══ FOOTER ══ -->
 <footer>  
   <p>Salsabil Ouni &nbsp;·&nbsp; AI Engineer &nbsp;·&nbsp; <a href="mailto:salsabil.ouni.i@gmail.com">salsabil.ouni.i@gmail.com</a></p>
+
 </footer>
 
 <script src="js/main.js"></script>
