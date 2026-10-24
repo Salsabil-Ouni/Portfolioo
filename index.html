@@ -235,18 +235,21 @@
   <div class="edu-grid">
     <div class="edu-card reveal">
       <div class="edu-school">Faculty of Medicine Ibn El Jazzar of Sousse</div>
-      <div class="edu-deg">Master's in Molecular Medicine ,  AI applied to Genetics, Immunology &amp; Microbiology</div>
+      <div class="edu-deg">Master's in Molecular Medicine: AI Applied to Genetics, Immunology &amp; Microbiology</div>
       <span class="edu-yr">2024 – Present</span>
+      <div class="edu-courses"><strong>Coursework:</strong> Genomics, Bioinformatics, Immunology, Molecular Biology, Biostatistics, Biomedical Data Analysis</div>
     </div>
     <div class="edu-card reveal">
       <div class="edu-school">Polytechnic School of Sousse</div>
       <div class="edu-deg">Engineering Diploma in Artificial Intelligence and Data Science</div>
       <span class="edu-yr">2024 – Present</span>
+      <div class="edu-courses"><strong>Coursework:</strong> Machine Learning, Deep Learning, NLP, Big Data Analytics, Computer Vision, MLOps, Statistical Programming with R, Distributed Computing, AI Model Deployment, Graph Algorithms</div>
     </div>
     <div class="edu-card reveal">
       <div class="edu-school">Higher Institute of Applied Science and Technology of Sousse</div>
       <div class="edu-deg">Bachelor of Computer Science &amp; Software Engineering <strong>with Honors</strong></div>
       <span class="edu-yr">2021 – 2024</span>
+      <div class="edu-courses"><strong>Coursework:</strong> Algorithms &amp; Data Structures, OOP (C++, Java), Database Systems (SQL, Oracle), Software Engineering, Web Development (React), Mobile Development, Linux, Debugging &amp; Software Testing</div>
     </div>
   </div>
 </section>
@@ -292,47 +295,116 @@
   <div class="proj-gifs">
     <div class="pg"><img src="gifs/18-1.png" alt="" /></div>
   </div>
+  <div class="proj-cat-label">Bioinformatics &amp; AI</div>
   <div class="proj-grid">
-
     <div class="pc reveal"
-      data-name="Per-Residue Protein Secondary Structure Prediction" 
-      data-desc="Deep learning pipeline predicting per-residue secondary structure (helix, sheet, coil) on protein sequences. Compares four architectures : CNN, BiGRU, BiLSTM, and hybrid, with the BiLSTM achieving 78.23% accuracy. Applied to the real human TP53 tumor suppressor with interactive 3D visualization."
+      data-name="Per-Residue Protein Secondary Structure Prediction"
+      data-desc="Deep learning pipeline predicting per-residue secondary structure (helix, sheet, coil) on protein sequences. Compares four architectures: CNN, BiGRU, BiLSTM, and hybrid BiLSTM achieving 78.23% accuracy. Applied to human TP53 with interactive 3D visualization."
       data-tech="PyTorch,BiLSTM,CNN,BiGRU,NumPy,scikit-learn,py3Dmol,Matplotlib"
       data-video="media/protein_secondary_structure_predictor.mp4"
       data-demo="" data-github="https://github.com/Salsabil-Ouni/Per-Residue-Protein-Secondary-Structure-Prediction">
-      <div class="pc-name">Per-Residue Secondary Structure Prediction</div>
+      <div class="pc-name">Protein Secondary Structure Prediction</div>
       <div class="pc-desc">BiLSTM model predicting helix/sheet/coil at each residue with 78.23% accuracy, applied to human TP53 with 3D visualization.</div>
       <div class="pc-hint">tap for details →</div>
     </div>
-
     <div class="pc reveal"
-      data-name="Protein 3D Viewer" 
-      data-desc="Flutter mobile app for interactive 3D protein structure visualization using the RCSB Protein Data Bank API. Features JWT authentication, real-time PDB data fetching, NGL.js molecular rendering inside a WebView, physicochemical property extraction, and offline support via Hive local storage."
-      data-tech="Flutter,Dart,NGL.js,Riverpod,Hive,Firebase,dio,RCSB PDB API"
-      data-video="media/protein3DViewer.mp4"
-
-      data-demo="" data-github="https://github.com/Salsabil-Ouni/Protein-3D-Viewer">
-      <div class="pc-name">Protein 3D Viewer</div>
-      <div class="pc-desc">Flutter mobile app for interactive 3D protein structure visualization with real-time RCSB PDB data and offline support.</div>
-      <div class="pc-hint">tap for details →</div>
-    </div>
-
-    <div class="pc reveal"
-      data-name="Protein Thermostability Prediction" 
-      data-desc="Binary classifier predicting whether a protein survives extreme heat (>75°C) from sequence alone , no 3D structure needed. Trained on 16,500 UniProt proteins with 429 extracted features (amino acid composition, dipeptide frequencies, physicochemical properties), achieving 93.8% accuracy and 0.983 ROC-AUC with HistGradientBoosting."
+      data-name="Protein Thermostability Prediction"
+      data-desc="Binary classifier predicting whether a protein survives extreme heat (>75°C) from sequence alone, no 3D structure needed. Trained on 16,500 UniProt proteins with 429 extracted features, achieving 93.8% accuracy and 0.983 ROC-AUC with HistGradientBoosting."
       data-tech="Python,scikit-learn,Streamlit,pandas,NumPy,UniProt"
       data-demo="" data-github="https://github.com/Salsabil-Ouni/Protein-Thermostability-Prediction">
       <div class="pc-name">Protein Thermostability Prediction</div>
-      <div class="pc-desc">93.8% accuracy classifier predicting protein heat stability (>75°C) from sequence features alone, trained on 16,500 UniProt proteins.</div>
+      <div class="pc-desc">93.8% accuracy classifier predicting protein heat stability (&gt;75°C) from sequence features alone, trained on 16,500 UniProt proteins.</div>
       <div class="pc-hint">tap for details →</div>
     </div>
-
-    <div class="pc reveal" style="background:var(--sky-light);border-color:var(--blue);cursor:default;">
-      
-      <div class="pc-name">more coming soon !! </div>
-      <div class="pc-desc">always building something new: NLP, healthcare, whatever turns out to be interesting (and cinnamoroll themed when possible!).</div>
+    <div class="pc reveal"
+      data-name="Protein Function Classification via ESM-2 and Contact Map Fusion"
+      data-desc="Multimodal deep learning pipeline that fuses ESM-2 protein language model embeddings with predicted contact maps (EfficientNet-B0) to classify proteins into Enzyme Commission (EC) classes. Combines sequence-level and structural-level representations for richer function prediction."
+      data-tech="Python,ESM-2,EfficientNet-B0,PyTorch,scikit-learn,pandas,NumPy,Transformers"
+      data-demo="" data-github="https://github.com/Salsabil-Ouni/Protein-Function-Classification-via-ESM--2-and-Contact-Map-Fusion">
+      <div class="pc-name">Protein Function Classification (ESM-2 + Contact Maps)</div>
+      <div class="pc-desc">Multimodal fusion of ESM-2 sequence embeddings and contact map images (EfficientNet-B0) for Enzyme Commission class prediction.</div>
+      <div class="pc-hint">tap for details →</div>
     </div>
+    <div class="pc reveal"
+      data-name="Gene Expression Exploration"
+      data-desc="Exploratory analysis and visualization pipeline for gene expression datasets. Includes differential expression analysis, dimensionality reduction, clustering, and biological pathway interpretation."
+      data-tech="Python,R,pandas,seaborn,scikit-learn"
+      data-demo="" data-github="https://github.com/Salsabil-Ouni/Gene-expression">
+      <div class="pc-name">Gene Expression Exploration</div>
+      <div class="pc-desc">Analysis and visualization pipeline for gene expression data, covering differential expression, clustering, and pathway interpretation.</div>
+      <div class="pc-hint">tap for details →</div>
+    </div>
+    <div class="pc reveal"
+      data-name="DNA Sequence Classification"
+      data-desc="Deep learning model for classifying DNA sequences into functional categories. Uses convolutional and recurrent architectures to capture motif patterns and long-range dependencies in genomic sequences."
+      data-tech="Python,PyTorch,scikit-learn,Biopython,NumPy"
+      data-demo="" data-github="https://github.com/Salsabil-Ouni/DNA-Classification-">
+      <div class="pc-name">DNA Sequence Classification</div>
+      <div class="pc-desc">Deep learning classifier for DNA sequences using CNN and RNN architectures to capture genomic motif patterns.</div>
+      <div class="pc-hint">tap for details →</div>
+    </div>
+  </div>
 
+  <div class="proj-cat-label">Healthcare AI</div>
+  <div class="proj-grid">
+    <div class="pc reveal"
+      data-name="Breast Cancer Detection in Women"
+      data-desc="Machine learning pipeline for early breast cancer detection, combining clinical and imaging features to classify tumors as benign or malignant. Optimized for high recall to minimize false negatives."
+      data-tech="Python,scikit-learn,pandas,NumPy,Matplotlib"
+      data-demo="" data-github="">
+      <div class="pc-name">Breast Cancer Detection in Women</div>
+      <div class="pc-desc">ML classifier for early breast cancer detection, optimized for high recall to minimize false negatives in clinical screening.</div>
+      <div class="pc-hint">tap for details →</div>
+    </div>
+  </div>
+
+  <div class="proj-cat-label">Computer Vision &amp; AI</div>
+  <div class="proj-grid">
+    <div class="pc reveal"
+      data-name="Yolo Queue Intelligence"
+      data-desc="Real-time queue analysis system using YOLO object detection to monitor, count, and predict wait times in queuing scenarios. Provides actionable intelligence for crowd and queue management."
+      data-tech="Python,YOLO,OpenCV,NumPy"
+      data-demo="" data-github="https://github.com/Salsabil-Ouni/Queue-Intelligence">
+      <div class="pc-name">Yolo Queue Intelligence</div>
+      <div class="pc-desc">Real-time queue monitoring and wait-time prediction using YOLO object detection for crowd management.</div>
+      <div class="pc-hint">tap for details →</div>
+    </div>
+  </div>
+
+  <div class="proj-cat-label">Generative AI</div>
+  <div class="proj-grid">
+    <div class="pc reveal"
+      data-name="Cinnamoroll Multimodal AI Companion"
+      data-desc="A multimodal AI companion built around Cinnamoroll, featuring RAG (Retrieval-Augmented Generation) and long-term memory. Maintains persistent context across sessions, supports multimodal input, and creates a character-driven conversational experience that remembers past interactions."
+      data-tech="Python,RAG,LangChain,ChromaDB,OpenAI,Multimodal AI,Long-Term Memory"
+      data-demo="" data-github="https://github.com/Salsabil-Ouni/Cinnamoroll-Multimodal-AI-Companion-with-RAG-and-Long-Term-Memory">
+      <div class="pc-name">Cinnamoroll AI Companion</div>
+      <div class="pc-desc">Multimodal AI companion with RAG and persistent long-term memory, built around Cinnamoroll's character.</div>
+      <div class="pc-hint">tap for details →</div>
+    </div>
+    <div class="pc reveal"
+      data-name="Stitch with Cinnamoroll"
+      data-desc="A creative generative AI project combining Stitch and Cinnamoroll characters in an interactive AI-driven experience. Explores character fusion, generative storytelling, and playful AI interaction design."
+      data-tech="Python,Generative AI,OpenAI"
+      data-demo="" data-github="https://github.com/Salsabil-Ouni/Stitch-with-Cinnamoroll">
+      <div class="pc-name">Stitch with Cinnamoroll</div>
+      <div class="pc-desc">Generative AI project blending Stitch and Cinnamoroll in a playful, character-driven AI experience.</div>
+      <div class="pc-hint">tap for details →</div>
+    </div>
+  </div>
+
+  <div class="proj-cat-label">Mobile &amp; Full Stack</div>
+  <div class="proj-grid">
+    <div class="pc reveal"
+      data-name="Protein 3D Viewer"
+      data-desc="Flutter mobile app for interactive 3D protein structure visualization using the RCSB Protein Data Bank API. Features JWT authentication, real-time PDB data fetching, NGL.js molecular rendering inside a WebView, physicochemical property extraction, and offline support via Hive local storage."
+      data-tech="Flutter,Dart,NGL.js,Riverpod,Hive,Firebase,dio,RCSB PDB API"
+      data-video="media/protein3DViewer.mp4"
+      data-demo="" data-github="https://github.com/Salsabil-Ouni/Protein-3D-Viewer">
+      <div class="pc-name">3D Protein Viewer</div>
+      <div class="pc-desc">Flutter mobile app for interactive 3D protein structure visualization with real-time RCSB PDB data and offline support.</div>
+      <div class="pc-hint">tap for details →</div>
+    </div>
   </div>
 </section>
 </div>
@@ -365,6 +437,7 @@
       <div class="rc-title">NLP and ML Approaches to the Endometriosis–Fibromyalgia Link</div>
       <div class="rc-desc">Literature mining pipeline combining BERTopic topic modelling and LLM-based information extraction on PubMed articles to surface latent mechanistic connections between endometriosis and fibromyalgia.</div>
                 <a class="rc-link" href="https://github.com/Salsabil-Ouni/LLM-Based-NLP-Analysis-of-Fibromyalgia-and-Chronic-Pain-Subreddits" target="_blank" rel="noopener">GitHub →</a>
+      <a class="rc-link" href="https://doi.org/10.5281/zenodo.23286907" target="_blank" rel="noopener">DOI →</a>
 
     </div>
 
@@ -373,6 +446,13 @@
       <div class="rc-title">Fibromyalgia RNA Sequencing Machine Learning Classifier</div>
       <div class="rc-desc">ML classifier for fibromyalgia using bulk RNA sequencing data from GEO dataset GSE221921. Includes preprocessing, differential expression analysis, and classification pipeline.</div>
       <a class="rc-link" href="https://github.com/Salsabil-Ouni/Fibromyalgia-RNA-sequencing-Machine-Learning-Classifier-GSE221921." target="_blank" rel="noopener">GitHub →</a>
+      <a class="rc-link" href="https://doi.org/10.5281/zenodo.23265023" target="_blank" rel="noopener">DOI →</a>
+    </div>
+
+    <div class="rc reveal">
+      <div class="rc-top"><span class="rc-badge">ongoing</span></div>
+      <div class="rc-title">Genetic Prioritization of Plasma Proteins</div>
+      <div class="rc-desc">Subtype-resolved Mendelian randomization of plasma proteins with single-cell mapping</div>
     </div>
 
   </div>

@@ -231,6 +231,7 @@ section { max-width:1100px; margin:0 auto; padding:65px 24px; scroll-margin-top:
 .edu-school { font-weight:900; font-size:.97rem; color:var(--blue-dark); margin-bottom:5px; line-height:1.4; }
 .edu-deg    { font-size:.85rem; color:var(--text); line-height:1.5; margin-bottom:9px; }
 .edu-yr     { display:inline-block; background:var(--pink-light); color:#c0507a; padding:3px 13px; border-radius:99px; font-size:.78rem; font-weight:800; border:2px solid var(--pink); }
+.edu-courses { font-size:.78rem; color:var(--text-muted); margin-top:10px; line-height:1.5; }
 
 /* â•â• SKILLS â•â• */
 #skills-wrap { background:transparent; padding:65px 0; }
@@ -251,6 +252,8 @@ section { max-width:1100px; margin:0 auto; padding:65px 24px; scroll-margin-top:
 .proj-gifs .pg { width:88px; height:88px; border-radius:50%; overflow:hidden; border:4px solid var(--blue); box-shadow:0 6px 20px var(--shadow); animation:bob 4s ease-in-out infinite; }
 .proj-gifs .pg img { width:100%; height:100%; object-fit:cover; display:block; }
 .proj-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(275px,1fr)); gap:19px; }
+.proj-cat-label { font-size:.72rem; font-weight:800; text-transform:uppercase; letter-spacing:.08em; color:var(--blue-mid); margin:28px 0 12px; border-left:3px solid var(--blue); padding-left:10px; }
+.proj-cat-label:first-of-type { margin-top:8px; }
 .pc {
   background:#fff; border-radius:20px; padding:23px 21px;
   box-shadow:0 4px 20px var(--shadow); border:2px solid var(--sky);
